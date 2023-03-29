@@ -1,0 +1,22 @@
+{
+  "Include_Checks": [
+    {
+      "Title": "Security groups should not allow unrestricted access to ports with high risk"
+    },
+    {
+      "Title": "RDS DB Instances should prohibit public access, determined by the PubliclyAccessible configuration"
+    },
+    {
+      "Title": "Amazon Redshift clusters should prohibit public access"
+    },
+    {
+      "Title": "IAM policies should not allow full '*' administrative privileges"
+    },
+    {
+      "Title": "ECS services should not have public IP addresses assigned to them automatically"
+    },
+    {
+      "Title": "RDS snapshot should be private"
+    }
+  ]
+}

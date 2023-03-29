@@ -1,0 +1,58 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DisassociateAddress",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeInstances",
+                "ec2:DescribeAddresses",
+                "ec2:DescribeRegions",
+                "ec2:CopyImage",
+                "ec2:DescribeSnapshots",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "ec2:DeleteVolume",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeVolumes",
+                "ec2:CreateSnapshot",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeKeyPairs",
+                "ec2:DetachVolume",
+                "ec2:RebootInstances",
+                "ec2:TerminateInstances",
+                "ec2:CreateTags",
+                "ec2:RunInstances",
+                "ec2:DescribeSecurityGroups",
+                "ec2:CreateVolume",
+                "ec2:DescribeImages",
+                "ec2:DescribeVpcs",
+                "elasticloadbalancing:DescribeTargetGroups",
+                "ec2:AssociateAddress",
+                "ec2:DescribeSubnets"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": "s3:*",
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "kms:ReEncryptFrom",
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:RevokeGrant",
+                "kms:GenerateDataKey",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:DescribeKey",
+                "kms:CreateGrant",
+                "kms:ListGrants"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        }
+    ]
+}
